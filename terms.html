@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Z Airport Parking</title>
+</head>
+
+<body>
+  <div class="preloader js-preloader">
+    <div class="preloader__title"><img class="size-200" src="img/zicon/logo.png" alt="image"></div>
+  </div>
+  <main>
+    <div class="header-margin"></div>
+    <header data-add-bg="bg-dark-1" class="header  js-header" data-x="header" data-x-toggle="is-menu-opened" id="header">
+      <div data-anim="fade" class="header__container container">
+        <div class="row justify-between items-center">
+          <div class="col-auto">
+            <div class="d-flex items-center">
+              <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark"> 
+                <img src="img/general/logo.png" alt="logo icon"> 
+                <img src="img/general/orange.png" alt="logo icon"> 
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex items-center">
+              <div class="header-menu " data-x="mobile-menu" data-x-toggle="is-menu-active">
+                <div class="mobile-overlay"></div>
+                <div class="header-menu__content">
+                  <div class="mobile-bg js-mobile-bg"></div>
+                  <div class="menu js-navList">
+                    <ul class="menu__nav text-white -is-active">
+                      <li class="menu-item-has-children">
+                        <a data-barba href="index.html"> 
+                          <span class="mr-10">Home</span> 
+                        </a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a data-barba href="all-airport.html"> 
+                          <span class="mr-10">Airport Parking</span> 
+                          <i class="icon icon-chevron-sm-down"></i> 
+                        </a>
+                        <ul class="subnav">
+                          <li class="subnav__backBtn js-nav-list-back"> 
+                            <a href="parking.html">
+                              <i class="icon icon-chevron-sm-down"></i>Airport Parking
+                            </a> 
+                          </li>
+                          <li>
+                            <a href="parking.html">Gatwick Airport parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Heathrow Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Glasgow Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Edinburgh Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Aberdeen Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Southend Airport Parking</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li> 
+                        <a href="parkingtypes.html">Parking Types</a> 
+                      </li>
+                      <li> 
+                        <a href="faqs.html">Faqs</a> 
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer"></div>
+                </div>
+              </div>
+              <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none"> 
+                <a href="manage-booking.html" class="button px-30 fw-400 text-14 -blue-1 bg-white h-50 text-dark-1">Manage Booking</a> 
+                <a href="support.html" class="button px-30 fw-400 text-14 border-white -blue-1 h-50 text-white ml-20">Customer Support</a> 
+              </div>
+              <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
+                <div>
+                  <button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="header, header-logo, header-mobile-icons, mobile-menu"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section data-anim-wrap class="masthead -type-10" id="inner-banner">
+      <div class="container-1500">
+        <div class="row">
+          <div class="col-lg-auto">
+            <div class="masthead__content">
+              <h1 data-anim-child="slide-up delay-1" class="text-60 lg:text-40 sm:text-30 text-white">Terms and Conditions</h1>
+              <p data-anim-child="slide-up delay-2" class="mt-5 text-white">The “customer” refers to the person or persons using or proposing to use the services of the company</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="layout-pt-md">
+      <div class="container">
+        <div class="row y-gap-30 pb-50 justify-between items-center">
+          <div class="col-lg-12">
+            <h2 class="text-30 mt-20 fw-600">Meet and Greet/ Park and Ride/On site</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">You must ensure that you have a booking reference number of the confirmation of the booking during your travel. You must carry with you your Credit / Debit Card used for the booking to ensure that the procedure at the Zairport Parking can be completed in a smooth manner with little hassle to you and the parking staff. By booking through Zairport Parking, the customer agrees to abide by the terms and conditions that have been mentioned hereinafter in its entirety. The parking services offered by Zairport Parking There will not be any obligation upon Zairport Parking for returning the money on account of the fact that the information wasn't mentioned anywhere on the website. It has been mentioned time and again in the terms and conditions and otherwise that the services offered are off site and offered through service provider rather than the Booking Agent.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Company's Liability</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">The liability for Zairport Parking to the customer for all claims from the use of this website and materials is limited to the cost of the customer's booking including both parking and booking fees paid to the www.zairportparking.co.uk. Any claims by the customer in respect of the service rendered by service provider must be made against the service provider and subject to its terms and conditions.<br>
+            These Terms and Conditions apply only to bookings made directly through zairportparking.co.uk.<br>
+            The company acts only as a booking agent for the service provider for the featured Zairport Parking. It does not itself provide the services. The customer will be contracting with the service provider and will be subject to the service provider's terms and conditions. Full details of these terms and conditions are available from the service provider.<br>
+            If you encounter a problem/damage to the vehicle at your chosen parking, please inform the service provider immediately to give them the opportunity to rectify the problem. If you do not advise the service provider at the time it may be difficult to pursue a complaint at a later stage. The booking agent would not be liable for any damage to the vehicle and it should be dealt directly with the service provider.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Service Provider Liability</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">All parkings is subject to the terms and conditions of the individual Zairport Parking and the customer expressly accepts that all claims regarding damage or loss caused by the operator must be claimed from the service provider insurance and reported to the operator at the time of collection.<br>
+            Service provider(s) will not be responsible in any way once the vehicle has been handed over to the customer
+            The service provider offers no warranty or indemnity as to the protection or safety of any goods left within the vehicles and owners of vehicles are reminded that their own policies of insurance must be utilized in order to make any claim if such loss or damage occurs while the vehicle is parking in the Zairport Parking area and was not directly the fault of the service provider.<br>
+            Any damage found on the vehicle on the time of return will not be considered unless it is brought to the attention of the service provider before leaving the parking premises or airport
+            Your vehicle must be roadworthy condition e.g. valid Tax and MOT, at the time of your collection.<br>
+            The service providers accept no liability for mechanical or electrical failure of any part of your vehicle, including windscreens, alarms, immobilizers, glass, flat batteries, tyres and wheels howsoever caused. The Zairport Parking/service providers accept no liability for any faulty car keys, alarm fobs, house or other keys left on the key ring. You must ensure you leave the drivers with the right keys, alarm fobs and instructions to start your vehicle.<br>
+            The manner in which Zairport Parking works is through various service providers. There are several individual service providers whose services Zairport Parking hires and there are certain terms and conditions that are needed to be followed exclusively for these individual Zairport Parking . In case of any negligence that is committed, there will be full responsibility of the service provider till the time the vehicle is in the Zairport Parking or returned. There will not be any liability once the vehicle is out of the premises of the Zairport Parking or handed over. Please ensure that the vehicle has been checked properly.<br>
+            The Company has the right to refuse or not fulfil a booking. The booking does not ensure that you will get the guaranteed service as the company can cancel the booking in case the service provider is unable to fulfil the booking. If such circumstance arises, the Company will provide you a refund but will not be liable for any consequential loss or damage suffered. There will not be any liability of Zairport Parking when there is non-performance due to unforeseeable circumstances such as war, riots, terrorism, natural and nuclear disaster, unnatural weather conditions etc. or any other circumstances which would amount to an act of God.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Instructions and Procedure for Parking</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">In case of park and ride services Ensure that you are carrying with you the directions which take you to your Zairport Parking including the booking reference number. You should also be familiar with the entry and exit procedures of the Zairport Parking. All of these details would be printed on the booking voucher that has been provided to you. The liability of ensuring that the correct sets of directions are being followed is upon the customer which needs to be seen into prior to exiting from the Zairport Parking. It will not be the responsibility of Zairport Parking and any of our agents in case there are bookings which are missed.<br>
+            In case of Chauffeur/Meet and Greet services to ensure that there is a smooth ride, please ensure that you carry with you the contact number of the Chauffeur. Please familiarize yourself with the information regarding the procedure for arrival as mentioned in your booking voucher. The sole liability of being aware of the information that is mentioned in the voucher lies upon the customer. Zairport Parking and/or our agent will not be responsible for any missed bookings. Possessions and keys please ensure that there are no valuables inside your car and the only thing that is left behind is the keys/codes which would be needed to move the vehicle around. There is a chance that the car keys would need to be left with the parking staff unless it has been mentioned otherwise.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Procedures</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">In case proper entry and exit procedure as mentioned in the terms and conditions is not followed and a customer is charged with entry or exit fee, Zairport Parking will not be responsible for the refund. Please present your vouchers at the time of entry. In a scenario where the company drivers are subjected to waiting or in cases of late arrivals by client, it may lead to an additional charge of 10 which is supposed to be paid at the earliest. Please refer to more information for information related to surcharges. The vehicle that is to be parked at the Zairport Parking needs to be in such a condition that it has a current MOT, is drivable, and is taxed. The Zairport Parking services hold the right to shift the vehicle in or outside the premises of the Zairport Parking. The car can be driven for the same purpose. This is done to ensure that there is proficient management of the parking service. It is also done to prevent accidents or any hitch. Until there is a booking made for a self-park vehicle, the keys need to be given to the authorities for the same purpose. The Zairport Parking company has the right to bring the car to a public way and for that purpose the drivers provided by the company carry with them a full insurance.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Payment</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">At Zairport Parking we are always putting in the best efforts to provide our customers with the best possible deals that are available. For this purpose, we keep looking out the best deals which lead to revision in prices and services. We try to arrange for certain offers during various times in the year. There are times when due to high demand the prices may also go up.
+            Booking fee will apply to all card payments.<br>
+            In case of cancellations, the booking fee will not be refunded.<br>
+            The prices may change subjected to the date and the duration of stay
+            There are certain surcharges that are levied independent from the company and haven't been imposed by Zairport Parking and aren't included in the prices provided by Zairport Parking.
+            The two way 24 hour transfers are inclusive of the price payable to the price. This transfer is from the Zairport Parking to the airport.<br>
+            In case of certain bookings at some Zairport Parking, a minimum stay applies. In such cases, you can stay for less than the minimum number of days, but will nonetheless have to make the payment that is due for the minimum period of booking.<br>
+            In case there is a high sided or wide vehicle, certain Zairport Parking may not be able to accommodate that vehicle or may do that at an extra charge. This can be checked at more info or at the additional details that are available at our office.<br>
+            Multiple special offers and discount codes cannot be clubbed together unless explicitly stated.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Cancellations/Refunds</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">These are only applicable to services which are cancellable.
+            The cancellations need to be done through us only and should not be made with the service provider to be valid.<br>
+            In order to get cancellation done, an email needs to be sent to info@zairportparking.co.uk including the booking reference number.<br>
+            There is a certain time limit that needs to be followed for cancellation requests to be accepted. No requests would be entertained post the office hours.<br>
+            Customers who have not followed the conditions which have been mentioned would not be given any refund if unable to park.<br>
+            In case there is a shorter stay than what was planned, there will not be any refund given.
+            The Refund Notice must be given within 48 hours of the cancellation, failing which the refund due to you will be waived.<br>
+            As subjected to the prior notice periods, there would be an additional charges that would be chargeable. There are certain offers which explicitly say they are not refundable for which no refunds would be available. There would be no money given back in case of booking fees and SMS charges.<br>
+            Double bookings - A customer will have to pay the entire cost of a booking in case there is no contact made within 30 days of return when there is a double booking made for the very same vehicle/stay.<br>
+            We, at Zairport Parking try to make sure that complete information is to be provided to the clients after they have made the booking. Even after the receiving the complete information and detailed guidelines if a client fails to avail the given services with no due given notice there wouldn't be any refund that would be given.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Cancellation Cover</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">This is only applicable to services and products which are cancellable and amendable.<br>
+            In case a customer wishes to cancel a booking, the stipulated time should be in advance 24 hours before the date of departure. In case a cancellation is done post that period, the rules mentioned above would be applicable.<br>
+            If explicitly mentioned cancellation cover wouldn't be applicable, it also will not be applicable if the bookings are for that date on which booking is done or the next day also.<br>
+            The period in which cancellation requests would be entertained would be during the office period only. No cancellation requests would be seen post the notice period.</p>
+
+            <h2 class="text-30 mt-20 fw-600">Complaints Procedure</h2>
+            <p class="text-dark-1 mt-10 lg:mt-40 md:mt-20">In case there is an issue at any of the given Zairport Parking, please provide information to the agent offering the services there for them to solve the issue. If you do not identify the provider at the time it may be difficult to resolve it later and the company will not be liable for the same. There will be maximum cooperation that would be provided to you though there is no full guarantee of it and the company will not be liable for the same.<br>
+            In case you feel that there are certain other problems that you have encountered, do mention them using customer support ticketing system(top right- home page) in a limit of 10 days of return. You can also write to us at Unit 9105 141 Access House, Morden Road, Mitcham, Surrey, England, CR4 4DG.<br>
+            The response cycle is about 10 days long, once the complaint has been received and there are maximum efforts done to resolve them. Our customers can view the progress of their complaint at customer support section.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer -type-3 text-white bg-dark-1">
+      <div class="container">
+        <div class="pt-60 pb-60">
+          <div class="row y-gap-40 justify-between xl:justify-start">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Contact Us</h5>
+              <div class="mt-30">
+                <div class="text-14 mt-30">Toll Free Customer Care</div> 
+                <a href="#" class="text-18 fw-500 mt-5">020 4511 4171</a> 
+              </div>
+              <div class="mt-35">
+                <div class="text-14 mt-30">Office Address</div> 
+                <a href="#" class="text-18 fw-500 mt-5">Suite 13, 95 Miles Road, <br>Mitcham, England, CR4 3FH</a> 
+              </div>  
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Airports</h5>
+              <div class="d-flex y-gap-10 flex-column"> 
+                <a href="parking.html">Gatwick Airport Parking</a> 
+                <a href="parking.html">Heathrow Airport Parking</a> 
+                <a href="parking.html">Glasgow Airport Parking</a> 
+                <a href="parking.html">Edinburgh Airport Parking</a> 
+                <a href="parking.html">Aberdeen Airport Parking</a> 
+                <a href="parking.html">Southened Airport Parking</a> 
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">other</h5>
+              <div class="d-flex y-gap-10 flex-column"> 
+                <a href="index.html">Home</a> 
+                <a href="blog.html">Blogs</a> 
+                <a href="faqs.html">Faqs</a> 
+                <a href="manage-booking.html">Manage Booking</a> 
+                <a href="support.html">Customer Support</a> 
+                <a href="all-airport.html">All Airports</a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Get Updates & More</h5>
+              <div class="single-field relative d-flex justify-end items-center pb-30">
+                <input class="bg-white rounded-8" type="email" placeholder="Your Email">
+                <button class="absolute px-20 h-full text-15 fw-500 underline text-dark-1">Subscribe</button>
+              </div>
+              <div class="d-flex x-gap-20 items-center"> 
+                <a href="#">
+                  <i class="icon-facebook text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-twitter text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-instagram text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-linkedin text-14"></i>
+                </a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 border-top-white-15">
+          <div class="row justify-between items-center y-gap-10">
+            <div class="col-auto">
+              <div class="row x-gap-30 y-gap-10">
+                <div class="col-auto">
+                  <div class="d-flex items-center"> © 2022 Zairportparking LLC All rights reserved. </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row y-gap-10 items-center">
+                <div class="col-auto">
+                  <div class="d-flex x-gap-15"> 
+                    <a href="privacy.html">Privacy</a> 
+                    <a href="terms.html">Terms</a> 
+                    <a href="sitemap.html">Site Map</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
+  <script src="../../../unpkg.com/%40googlemaps/markerclusterer%402.0.13/dist/index.min.js"></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://zmdtravel.com/theme/tinyCalender/index.js"></script>
+</body>
+
+</html>

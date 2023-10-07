@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Z Airport Parking</title>
+</head>
+
+<body>
+  <div class="preloader js-preloader">
+    <div class="preloader__title">
+      <img class="size-200" src="img/zicon/logo.png" alt="image">
+    </div>
+  </div>
+  <main>
+    <div class="header-margin"></div>
+    <header data-add-bg="bg-dark-1" class="header  js-header" data-x="header" data-x-toggle="is-menu-opened" id="header">
+      <div data-anim="fade" class="header__container container">
+        <div class="row justify-between items-center">
+          <div class="col-auto">
+            <div class="d-flex items-center">
+              <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark"> 
+                <img src="img/general/logo.png" alt="logo icon"> 
+                <img src="img/general/orange.png" alt="logo icon"> 
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex items-center">
+              <div class="header-menu " data-x="mobile-menu" data-x-toggle="is-menu-active">
+                <div class="mobile-overlay"></div>
+                <div class="header-menu__content">
+                  <div class="mobile-bg js-mobile-bg"></div>
+                  <div class="menu js-navList">
+                    <ul class="menu__nav text-white -is-active">
+                      <li class="menu-item-has-children">
+                        <a data-barba href="index.html"> 
+                          <span class="mr-10">Home</span> 
+                        </a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a data-barba href="all-airport.html"> 
+                          <span class="mr-10">Airport Parking</span> 
+                          <i class="icon icon-chevron-sm-down"></i> 
+                        </a>
+                        <ul class="subnav">
+                          <li class="subnav__backBtn js-nav-list-back"> 
+                            <a href="parking.html">
+                              <i class="icon icon-chevron-sm-down"></i>Airport Parking
+                            </a> 
+                          </li>
+                          <li>
+                            <a href="parking.html">Gatwick Airport parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Heathrow Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Glasgow Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Edinburgh Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Aberdeen Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Southend Airport Parking</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li> 
+                        <a href="parkingtypes.html">Parking Types</a> 
+                      </li>
+                      <li> 
+                        <a href="faqs.html">Faqs</a> 
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer"></div>
+                </div>
+              </div>
+              <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none"> 
+                <a href="manage-booking.html" class="button px-30 fw-400 text-14 -blue-1 bg-white h-50 text-dark-1">Manage Booking</a> 
+                <a href="support.html" class="button px-30 fw-400 text-14 border-white -blue-1 h-50 text-white ml-20">Customer Support</a> 
+              </div>
+              <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
+                <div>
+                  <button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="header, header-logo, header-mobile-icons, mobile-menu"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section data-anim-wrap class="masthead -type-10">
+      <div class="container-1500">
+        <div class="row">
+          <div class="col-lg-auto">
+            <div class="masthead__content">
+              <h1 data-anim-child="slide-up delay-1" class="text-60 lg:text-40 sm:text-30 text-white">Where do You Want To Fly</h1>
+              <p data-anim-child="slide-up delay-2" class="mt-5 text-white">Discover amzaing places at exclusive deals</p>
+              <div data-anim-child="slide-up delay-3">
+                <div class="row y-gap-20 items-center pt-30"> </div>
+                <div class="tabs -bookmark js-tabs">
+                  <div class="tabs__controls d-flex items-center js-tabs-controls">
+                    <div class="">
+                      <button class="tabs__button px-30 py-20  fw-600 text-white js-tabs-button is-tab-el-active" data-tab-target=".-tab-item-1"> <i class="icon-car text-20 mr-10"></i> Airport Parking </button>
+                    </div>
+                  </div>
+                  <div class="tabs__content js-tabs-content">
+                    <div class="tabs__pane -tab-item-1 is-tab-el-active">
+                      <div class="mainSearch bg-white pr-20 pl-20 py-20 lg:px-20 lg:pt-5 lg:pb-20 shadow-1">
+                        <div class="button-grid items-center">
+                          <form class="row g-3 form-div" id="home_search_form">
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                              <label for="inputAddress" class="form-label">Airport</label>
+                              <select id="inputState" class="form-select">
+                                <option value="">Select Airport </option>
+                                <option value="">Gatwick Airport </option>
+                                <option value="">Heathrow Airport </option>
+                                <option value="">Stansted Airport </option>
+                                <option value="">Birmingham Airport </option>
+                                <option value="">Edinburgh Airport </option>
+                                <option value="">Southampton Airport </option>
+                                <option value="">Liverpool Airport </option>
+                                <option value="">Luton Airport </option>
+                                <option value="">Manchester Airport </option>
+                              </select>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                              <label for="inputEmail4" class="form-label">Drop Off</label>
+                              <input type="text" class="text-field dpd1 form-control" id="startDate" name="dropoffdate" required placeholder="DD/MM/YYYY"> </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                              <label for="inputPassword4" class="form-label">Time</label>
+                              <select id="inputState" class="form-select">
+                                <option value="00:00">00:00</option>
+                                <option value="00:15">00:15</option>
+                                <option value="00:30">00:30</option>
+                                <option value="00:45">00:45</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:15">01:15</option>
+                                <option value="01:30">01:30</option>
+                                <option value="01:45">01:45</option>
+                                <option value="02:00">02:00</option>
+                                <option value="02:15">02:15</option>
+                                <option value="02:30">02:30</option>
+                                <option value="02:45">02:45</option>
+                                <option value="03:00">03:00</option>
+                                <option value="03:15">03:15</option>
+                                <option value="03:30">03:30</option>
+                                <option value="03:45">03:45</option>
+                                <option value="04:00">04:00</option>
+                                <option value="04:15">04:15</option>
+                                <option value="04:30">04:30</option>
+                                <option value="04:45">04:45</option>
+                                <option value="05:00">05:00</option>
+                                <option value="05:15">05:15</option>
+                                <option value="05:30">05:30</option>
+                                <option value="05:45">05:45</option>
+                                <option value="06:00">06:00</option>
+                                <option value="06:15">06:15</option>
+                                <option value="06:30">06:30</option>
+                                <option value="06:45">06:45</option>
+                                <option value="07:00">07:00</option>
+                                <option value="07:15">07:15</option>
+                                <option value="07:30">07:30</option>
+                                <option value="07:45">07:45</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:15">08:15</option>
+                                <option value="08:30">08:30</option>
+                                <option value="08:45">08:45</option>
+                                <option selected value="09:00">09:00</option>
+                                <option value="09:15">09:15</option>
+                                <option value="09:30">09:30</option>
+                                <option value="09:45">09:45</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:15">10:15</option>
+                                <option value="10:30">10:30</option>
+                                <option value="10:45">10:45</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:15">11:15</option>
+                                <option value="11:30">11:30</option>
+                                <option value="11:45">11:45</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:15">12:15</option>
+                                <option value="12:30">12:30</option>
+                                <option value="12:45">12:45</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:15">13:15</option>
+                                <option value="13:30">13:30</option>
+                                <option value="13:45">13:45</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:15">14:15</option>
+                                <option value="14:30">14:30</option>
+                                <option value="14:45">14:45</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:15">15:15</option>
+                                <option value="15:30">15:30</option>
+                                <option value="15:45">15:45</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:15">16:15</option>
+                                <option value="16:30">16:30</option>
+                                <option value="16:45">16:45</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:15">17:15</option>
+                                <option value="17:30">17:30</option>
+                                <option value="17:45">17:45</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:15">18:15</option>
+                                <option value="18:30">18:30</option>
+                                <option value="18:45">18:45</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:15">19:15</option>
+                                <option value="19:30">19:30</option>
+                                <option value="19:45">19:45</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:15">20:15</option>
+                                <option value="20:30">20:30</option>
+                                <option value="20:45">20:45</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:15">21:15</option>
+                                <option value="21:30">21:30</option>
+                                <option value="21:45">21:45</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:15">22:15</option>
+                                <option value="22:30">22:30</option>
+                                <option value="22:45">22:45</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:15">23:15</option>
+                                <option value="23:30">23:30</option>
+                                <option value="23:45">23:45</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                              <label for="inputEmail4" class="form-label">Pick Up</label>
+                              <input type="text" class="text-field dpd1 form-control" id="endDate" name="pickupdate" required placeholder="DD/MM/YYYY"> </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                              <label for="inputPassword4" class="form-label"> Time</label>
+                              <select id="inputState" class="form-select">
+                                <option value="00:00">00:00</option>
+                                <option value="00:15">00:15</option>
+                                <option value="00:30">00:30</option>
+                                <option value="00:45">00:45</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:15">01:15</option>
+                                <option value="01:30">01:30</option>
+                                <option value="01:45">01:45</option>
+                                <option value="02:00">02:00</option>
+                                <option value="02:15">02:15</option>
+                                <option value="02:30">02:30</option>
+                                <option value="02:45">02:45</option>
+                                <option value="03:00">03:00</option>
+                                <option value="03:15">03:15</option>
+                                <option value="03:30">03:30</option>
+                                <option value="03:45">03:45</option>
+                                <option value="04:00">04:00</option>
+                                <option value="04:15">04:15</option>
+                                <option value="04:30">04:30</option>
+                                <option value="04:45">04:45</option>
+                                <option value="05:00">05:00</option>
+                                <option value="05:15">05:15</option>
+                                <option value="05:30">05:30</option>
+                                <option value="05:45">05:45</option>
+                                <option value="06:00">06:00</option>
+                                <option value="06:15">06:15</option>
+                                <option value="06:30">06:30</option>
+                                <option value="06:45">06:45</option>
+                                <option value="07:00">07:00</option>
+                                <option value="07:15">07:15</option>
+                                <option value="07:30">07:30</option>
+                                <option value="07:45">07:45</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:15">08:15</option>
+                                <option value="08:30">08:30</option>
+                                <option value="08:45">08:45</option>
+                                <option selected value="09:00">09:00</option>
+                                <option value="09:15">09:15</option>
+                                <option value="09:30">09:30</option>
+                                <option value="09:45">09:45</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:15">10:15</option>
+                                <option value="10:30">10:30</option>
+                                <option value="10:45">10:45</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:15">11:15</option>
+                                <option value="11:30">11:30</option>
+                                <option value="11:45">11:45</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:15">12:15</option>
+                                <option value="12:30">12:30</option>
+                                <option value="12:45">12:45</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:15">13:15</option>
+                                <option value="13:30">13:30</option>
+                                <option value="13:45">13:45</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:15">14:15</option>
+                                <option value="14:30">14:30</option>
+                                <option value="14:45">14:45</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:15">15:15</option>
+                                <option value="15:30">15:30</option>
+                                <option value="15:45">15:45</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:15">16:15</option>
+                                <option value="16:30">16:30</option>
+                                <option value="16:45">16:45</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:15">17:15</option>
+                                <option value="17:30">17:30</option>
+                                <option value="17:45">17:45</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:15">18:15</option>
+                                <option value="18:30">18:30</option>
+                                <option value="18:45">18:45</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:15">19:15</option>
+                                <option value="19:30">19:30</option>
+                                <option value="19:45">19:45</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:15">20:15</option>
+                                <option value="20:30">20:30</option>
+                                <option value="20:45">20:45</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:15">21:15</option>
+                                <option value="21:30">21:30</option>
+                                <option value="21:45">21:45</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:15">22:15</option>
+                                <option value="22:30">22:30</option>
+                                <option value="22:45">22:45</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:15">23:15</option>
+                                <option value="23:30">23:30</option>
+                                <option value="23:45">23:45</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                              <label for="inputZip" class="form-label">Promo Code</label>
+                              <input type="text" class="form-control" id="inputZip"> </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <button type="submit" class="btn btn-primary form-btn">Search Parking</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="layout-pt-xl layout-pb-md">
+      <div class="container">
+        <div class="row y-gap-10 justify-center text-center">
+          <div class="col-auto">
+            <div class="sectionTitle -md">
+              <h2 class="sectionTitle__title">All Airports Where we are Serving</h2>
+              <p class=" sectionTitle__text mt-5 sm:mt-0">These popular Airports have a lot to offer</p>
+            </div>
+          </div>
+        </div>
+        <div class="row y-gap-30 pt-40">
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/gatwick.jpg" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Gatwick Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Aberdeen-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Aberdeen Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/birmingham-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Birmingham Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Bristol-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Bristol Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Edinburgh-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Edinburgh Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row y-gap-30 pt-40">
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Glassgow-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Glasgow Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Heathrow-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Heathrow Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Liverpool-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Liverpool Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Luton-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Luton Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Manchester-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Manchester Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+        </div>
+          <div class="row y-gap-30 pt-40">
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Newcastle-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">New Castle Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Southampton.jpeg" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Southampton Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-1/5 lg:w-1/3 sm:w-1/2">
+            <a href="#" class="citiesCard -type-2 ">
+              <div class="citiesCard__image rounded-4 ratio ratio-23:18"> 
+                <img class="img-ratio rounded-4 js-lazy" data-src="img/airports/Stansted-Airport.png" src="#" alt="image"> 
+              </div>
+              <div class="citiesCard__content mt-10">
+                <h4 class="text-18 lh-13 fw-500 text-dark-1">Stansted Airport Parking</h4>
+                <div class="text-14 text-light-1">View Details</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer -type-3 text-white bg-dark-1">
+      <div class="container">
+        <div class="pt-60 pb-60">
+          <div class="row y-gap-40 justify-between xl:justify-start">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Contact Us</h5>
+              <div class="mt-30">
+                <div class="text-14 mt-30">Toll Free Customer Care</div> 
+                <a href="#" class="text-18 fw-500 mt-5">020 4511 4171</a> 
+              </div>
+              <div class="mt-35">
+                <div class="text-14 mt-30">Office Address</div> 
+                <a href="#" class="text-18 fw-500 mt-5">Suite 13, 95 Miles Road, <br>Mitcham, England, CR4 3FH</a> 
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Airports</h5>
+              <div class="d-flex y-gap-10 flex-column"> 
+                <a href="parking.html">Gatwick Airport Parking</a> 
+                <a href="parking.html">Heathrow Airport Parking</a> 
+                <a href="parking.html">Glasgow Airport Parking</a> 
+                <a href="parking.html">Edinburgh Airport Parking</a> 
+                <a href="parking.html">Aberdeen Airport Parking</a> 
+                <a href="parking.html">Southened Airport Parking</a> 
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">other</h5>
+              <div class="d-flex y-gap-10 flex-column"> 
+                <a href="index.html">Home</a> 
+                <a href="blog.html">Blogs</a> 
+                <a href="faqs.html">Faqs</a> 
+                <a href="manage-booking.html">Manage Booking</a> 
+                <a href="support.html">Customer Support</a> 
+                <a href="all-airport.html">All Airports</a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Get Updates & More</h5>
+              <div class="single-field relative d-flex justify-end items-center pb-30">
+                <input class="bg-white rounded-8" type="email" placeholder="Your Email">
+                <button class="absolute px-20 h-full text-15 fw-500 underline text-dark-1">Subscribe</button>
+              </div>
+              <div class="d-flex x-gap-20 items-center"> 
+                <a href="#">
+                  <i class="icon-facebook text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-twitter text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-instagram text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-linkedin text-14"></i>
+                </a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 border-top-white-15">
+          <div class="row justify-between items-center y-gap-10">
+            <div class="col-auto">
+              <div class="row x-gap-30 y-gap-10">
+                <div class="col-auto">
+                  <div class="d-flex items-center"> © 2022 Zairportparking LLC All rights reserved. </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row y-gap-10 items-center">
+                <div class="col-auto">
+                  <div class="d-flex x-gap-15"> 
+                    <a href="privacy.html">Privacy</a> 
+                    <a href="terms.html">Terms</a> 
+                    <a href="sitemap.html">Site Map</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
+  <script src="../../../unpkg.com/%40googlemaps/markerclusterer%402.0.13/dist/index.min.js"></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://zmdtravel.com/theme/tinyCalender/index.js"></script>
+    <script>
+      /*Airport Datepicker code*/
+      var enddate = new Date();
+      enddate.setDate(enddate.getDate() + 8);
+      new TinyPicker({
+        format: 'dd-mm-yyyy',
+        firstBox: document.getElementById('startDate'), // Required -- Overrides us finding the first input box
+        lastBox: document.getElementById('endDate'), // Required -- Overrides us finding the last input box
+        startDate: new Date(), // Needs to be a valid instance of Date   
+        endDate: enddate, // Needs to be a valid instance of Date
+        allowPast: false, // If you want the user to be able to select past dates
+        useCache: true,
+        orientation: "top auto",
+        horizontal: 'auto',
+        vertical: 'auto'
+      }).init();
+    </script>
+</body>
+
+</html>

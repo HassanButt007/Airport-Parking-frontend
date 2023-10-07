@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Z Airport Parking</title>
+</head>
+
+<body>
+  <div class="preloader js-preloader">
+    <div class="preloader__title"><img class="size-200" src="img/zicon/logo.png" alt="image"></div>
+  </div>
+  <main>
+    <div class="header-margin"></div>
+    <header data-add-bg="bg-dark-1" class="header  js-header" data-x="header" data-x-toggle="is-menu-opened" id="header">
+      <div data-anim="fade" class="header__container container">
+        <div class="row justify-between items-center">
+          <div class="col-auto">
+            <div class="d-flex items-center">
+              <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark"> 
+                <img src="img/general/logo.png" alt="logo icon"> 
+                <img src="img/general/orange.png" alt="logo icon"> 
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex items-center">
+              <div class="header-menu " data-x="mobile-menu" data-x-toggle="is-menu-active">
+                <div class="mobile-overlay"></div>
+                <div class="header-menu__content">
+                  <div class="mobile-bg js-mobile-bg"></div>
+                  <div class="menu js-navList">
+                    <ul class="menu__nav text-white -is-active">
+                      <li class="menu-item-has-children">
+                        <a data-barba href="index.html"> 
+                          <span class="mr-10">Home</span> 
+                        </a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a data-barba href="all-airport.html"> 
+                          <span class="mr-10">Airport Parking</span> 
+                          <i class="icon icon-chevron-sm-down"></i> 
+                        </a>
+                        <ul class="subnav">
+                          <li class="subnav__backBtn js-nav-list-back"> 
+                            <a href="parking.html">
+                              <i class="icon icon-chevron-sm-down"></i>Airport Parking
+                            </a> 
+                          </li>
+                          <li>
+                            <a href="parking.html">Gatwick Airport parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Heathrow Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Glasgow Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Edinburgh Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Aberdeen Airport Parking</a>
+                          </li>
+                          <li>
+                            <a href="parking.html">Southend Airport Parking</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li> 
+                        <a href="parkingtypes.html">Parking Types</a> 
+                      </li>
+                      <li> 
+                        <a href="faqs.html">Faqs</a> 
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer"></div>
+                </div>
+              </div>
+              <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none"> 
+                <a href="manage-booking.html" class="button px-30 fw-400 text-14 -blue-1 bg-white h-50 text-dark-1">Manage Booking</a> 
+                <a href="support.html" class="button px-30 fw-400 text-14 border-white -blue-1 h-50 text-white ml-20">Customer Support</a> 
+              </div>
+              <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons" data-x-toggle="text-white">
+                <div>
+                  <button class="d-flex items-center icon-menu text-inherit text-20" data-x-click="header, header-logo, header-mobile-icons, mobile-menu"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-blue-2 padding-tb">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="col-xl-6 col-lg-7 col-md-9">
+            <div class="px-50 py-50 sm:px-20 sm:py-20 bg-white shadow-4 rounded-4">
+              <div class="row y-gap-20">
+                <div class="col-12">
+                  <h1 class="text-30 fw-500 text-center">Booking Summary</h1> </div>
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Booking Reference No</label>
+                    <input type="text" class="form-control" placeholder="ZAP-XXX XXX"> 
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name"> 
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="email@domain.com"> 
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="button -md -blue-1 bg-yellow-1 text-dark-1 d-block m-auto">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer -type-3 text-white bg-dark-1">
+      <div class="container">
+        <div class="pt-60 pb-60">
+          <div class="row y-gap-40 justify-between xl:justify-start">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Contact Us</h5>
+              <div class="mt-30">
+                <div class="text-14 mt-30">Toll Free Customer Care</div> 
+                <a href="#" class="text-18 fw-500 mt-5">020 4511 4171</a> 
+              </div>
+              <div class="mt-35">
+                <div class="text-14 mt-30">Office Address</div> 
+                <a href="#" class="text-18 fw-500 mt-5">Suite 13, 95 Miles Road, <br>Mitcham, England, CR4 3FH</a> 
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Airports</h5>
+              <div class="d-flex y-gap-10 flex-column"> 
+                <a href="parking.html">Gatwick Airport Parking</a> 
+                <a href="parking.html">Heathrow Airport Parking</a> 
+                <a href="parking.html">Glasgow Airport Parking</a> 
+                <a href="parking.html">Edinburgh Airport Parking</a> 
+                <a href="parking.html">Aberdeen Airport Parking</a> 
+                <a href="parking.html">Southened Airport Parking</a> 
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">other</h5>
+              <div class="d-flex y-gap-10 flex-column"> 
+                <a href="index.html">Home</a> 
+                <a href="blog.html">Blogs</a> 
+                <a href="faqs.html">Faqs</a> 
+                <a href="manage-booking.html">Manage Booking</a> 
+                <a href="support.html">Customer Support</a> 
+                <a href="all-airport.html">All Airports</a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <h5 class="text-16 fw-500 mb-30">Get Updates & More</h5>
+              <div class="single-field relative d-flex justify-end items-center pb-30">
+                <input class="bg-white rounded-8" type="email" placeholder="Your Email">
+                <button class="absolute px-20 h-full text-15 fw-500 underline text-dark-1">Subscribe</button>
+              </div>
+              <div class="d-flex x-gap-20 items-center"> 
+                <a href="#">
+                  <i class="icon-facebook text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-twitter text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-instagram text-14"></i>
+                </a> 
+                <a href="#">
+                  <i class="icon-linkedin text-14"></i>
+                </a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 border-top-white-15">
+          <div class="row justify-between items-center y-gap-10">
+            <div class="col-auto">
+              <div class="row x-gap-30 y-gap-10">
+                <div class="col-auto">
+                  <div class="d-flex items-center"> © 2022 Zairportparking LLC All rights reserved. </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row y-gap-10 items-center">
+                <div class="col-auto">
+                  <div class="d-flex x-gap-15"> 
+                    <a href="privacy.html">Privacy</a> 
+                    <a href="terms.html">Terms</a> 
+                    <a href="sitemap.html">Site Map</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
+  <script src="../../../unpkg.com/%40googlemaps/markerclusterer%402.0.13/dist/index.min.js"></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://zmdtravel.com/theme/tinyCalender/index.js"></script>
+</body>
+
+</html>
